@@ -5,7 +5,7 @@ import { withRouter } from "react-router-dom";
 import ReactTable from "react-table-6";
 import "react-table-6/react-table.css";
 
-const Categories = withRouter(
+const Tasks = withRouter(
   observer((props) => {
     const [name, setName] = useState("");
     const [color, setColor] = useState("");
@@ -13,7 +13,7 @@ const Categories = withRouter(
 
     const [err, setErr] = useState("");
 
-    const createCategry = (e) => {
+    const createCategory = (e) => {
       e.preventDefault();
       if (!name) {
         setErr("Name must be set");
@@ -149,7 +149,7 @@ const Categories = withRouter(
                   <button
                     type="submit"
                     className="btn btn-primary"
-                    onClick={createCategry}
+                    onClick={createCategory}
                   >
                     Submit
                   </button>
@@ -168,4 +168,4 @@ const Categories = withRouter(
   })
 );
 
-export default Categories;
+export default Tasks;

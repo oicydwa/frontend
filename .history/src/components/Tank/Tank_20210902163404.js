@@ -3,7 +3,7 @@ import { observer } from "mobx-react";
 
 import { Navbar } from "../";
 import { TankStatisticsTable, TankStatisticsGraph } from "../";
-import { default as TankStoreContext } from "../../stores/TankStore/TankStore";
+import { TankStoreContext } from "../../stores";
 
 export const Tank = observer(() => {
   const {

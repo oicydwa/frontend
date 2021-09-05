@@ -10,11 +10,12 @@ import { default as Navbar } from './Navbar/Navbar';
 import { default as Tank } from './Tank/Tank';
 import { default as TankStatisticsGraph } from './TankStatisticsGraph/TankStatisticsGraph';
 import { default as TankStatisticsTable } from './TankStatisticsTable/TankStatisticsTable';
-import { default as FishStoreContext } from '../stores/FishStore/FishStore';
-import { default as TankStoreContext } from '../stores/TankStore/TankStore';
+import { FishStoreContext } from '../stores/FishStore/FishStore';
+import { TankStoreContext } from '../stores/TankStore/TankStore';
+
 
 export {
-  // Admin,
+  Admin,
   Categories,
   Tasks,
   Users,

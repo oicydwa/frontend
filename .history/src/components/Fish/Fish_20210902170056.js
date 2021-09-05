@@ -3,7 +3,7 @@ import { observer } from "mobx-react";
 
 import { Navbar } from "../";
 import { FishTable } from "../";
-import { FishStoreContext } from "../index";
+import { FishStoreContext } from "../../stores/FishStore/FishStore";
 
 export const Fish = observer(() => {
   const { fishState, listFish, addFish, removeFish } =
